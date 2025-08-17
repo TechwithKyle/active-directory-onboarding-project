@@ -31,13 +31,13 @@ Hi Kyle,
 We have 8 new employees joining across multiple departments. Please create their AD accounts and assign permissions based on their roles:
 
 HR:
-Sarah Thompson – HR Manager
-John Davis – HR Staff
+Sarah Thompson – HR Manager,
+John Davis – HR Staff,
 Emily Chen – HR Staff
 
 IT:
-Michael Lee – IT Staff
-Priya Patel – IT Staff
+Michael Lee – IT Staff,
+Priya Patel – IT Staff,
 James Miller – IT Contractor (3 months only)
 
 Sales:
