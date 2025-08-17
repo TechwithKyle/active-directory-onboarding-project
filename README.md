@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/62d83ac7-7b6c-4128-b857-6ab6d17536a3" alt="Description" width="600">
+</p>
 
 ---
 ## Platforms and Languages Leveraged
