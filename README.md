@@ -238,6 +238,34 @@ Finializing:
 
 ___
 
+## GROUP POLICY MANAGEMENT EDITOR
+
+For the final test, I launched the `Group Policy Management` Console by pressing `Win + R`, typing `gpmc.msc`, and pressing Enter. This opened the `Group Policy Management Editor`, allowing me to explore how `Group Policy Objects` (GPOs) are created, linked to `Organizational Units` (OUs), and used to manage user and computer configurations across the domain.
+
+Within the `Group Policy Management Editor`, I navigated to `Computer Configuration` > `Policies` > `Windows Settings` > `Security Settings` > `Account Policies` > `Password Policy` to enforce stricter password requirements and establish an account lockout policy across the domain.
+
+<img width="804" height="319" alt="Lab 122" src="https://github.com/user-attachments/assets/68ff421b-cdaf-461d-9426-92568e8ef5eb" /></br>
+
+<img width="802" height="318" alt="Lab 123" src="https://github.com/user-attachments/assets/0a040ab2-f4cc-40ff-9981-a5c5d72e53ef" /></br>
+
+To enable auditing for user activity, I configured `audit policies` to track logon events, logoffs, and account lockouts. These settings allow security teams to monitor authentication activity and detect potential unauthorized access attempts, account misuse, or lockout patterns across the domain.
+
+<img width="803" height="592" alt="Lab 127" src="https://github.com/user-attachments/assets/8ca1e105-1c55-451e-b869-a5d740ab74a8" /></br>
+
+These audits can be analyzed in `Event Viewer` (`Win + R` > `eventvwr.msc`) under `Windows Logs` > `Security`.
+
+<img width="1156" height="595" alt="Lab 132" src="https://github.com/user-attachments/assets/0e675f68-a347-40b9-a058-6251d1ee5677" /></br>
+
+| Task Category   | Event ID | Description                                                |
+|:----------------|:---------|:-----------------------------------------------------------|
+| Logon           | 4624     | Successful user logon                                      |
+| Logoff          | 4634     | User logoff                                                |
+| Logon Failure   | 4625     | Failed user logon attempt                                  |
+| Account Lockout | 4740     | A user account was locked out due to failed login attempts |
+| Special Logon   | 4672     | Logon with special privileges (e.g., admin rights)         |
+
+___
+
 
 
 
